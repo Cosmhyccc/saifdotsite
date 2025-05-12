@@ -1,3 +1,3 @@
 # saifdotsite
 
-# https://tinyurl.com/saifdotsite
+# https://saif.build
