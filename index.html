@@ -41,10 +41,23 @@
 </head>
 <body>
     <section id="about">
-        <h2>hi, i'm saif</h2>
+        <h2 id="typing-text"></h2>
         <p>
             i like building stuff & my net singular goal in life, is to leave the world better than I found it.
         </p>
+        <script>
+            const text = "hi, i'm saif";
+            const target = document.getElementById('typing-text');
+            let idx = 0;
+            function typeLetter() {
+                if (idx <= text.length) {
+                    target.textContent = text.slice(0, idx);
+                    idx++;
+                    setTimeout(typeLetter, 70);
+                }
+            }
+            typeLetter();
+        </script>
     </section>
 
     <section id="stuff">
